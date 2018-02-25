@@ -12,6 +12,8 @@ class unitest(unittest.TestCase):
 
 class Solution():
     def maxProfit(self, prices):
+        if prices == []:
+            return 0
         ans = 0
         low = prices[0]
         for i in prices:
